@@ -1,0 +1,92 @@
+.form__title {
+    text-align: center;
+}
+
+.form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form > div {
+    padding: 6px;
+    width: 100%;
+}
+
+.form div input,
+.form div button {
+    display: block;
+    width: 100%;
+}
+
+.form input {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 6px 8px;
+}
+
+.form button {
+    background-color: var(--light-blue);
+    padding: 6px;
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+.form__field.date label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form__btn-submit button {
+    transition: all var(--transition-time) ease;
+}
+
+.form__btn-submit button:hover {
+    background-color: #0022AA;
+}
+
+
+.clear-data button {
+    transition: all var(--transition-time) ease;
+}
+
+.clear-data button:hover {
+    color: #0022AA;
+}
+
+/* INPUT RADIO y CHECKBOX */
+.profile > p,
+.interests > p {
+    margin-bottom: 8px;
+}
+
+fieldset div {
+    margin-bottom: 12px;
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"],
+fieldset label {
+    display: inline !important;
+}
+
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+    width: 10% !important;
+}
+
+fieldset label {
+    width: 40% !important;
+}
+
+.clear-data button {
+    background-color: transparent;
+    color: var(--light-blue);
+}

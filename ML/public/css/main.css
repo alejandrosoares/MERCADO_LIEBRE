@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('header.css');
+@import url('footer.css');
+
+:root {
+    /* COLORS */
+    --yellow: #EAC926;
+    --blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --white: white;
+    --black: black;
+
+    /* FONTS */
+    --font-sm: 12px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 24px;
+
+    /* MEASURES */
+    --border-radius: 5px;
+
+    /* TRANSITIONS */
+    --transition-time: 1s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--light-gray);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title {
+    font-size: var(--font-xl);
+}
+
+.price {
+    font-size: var(--font-lg);
+    color: var(--black);
+}
+
+.description {
+    font-size: var(--font-md);
+}
+
+.discount {
+    font-size: var(--font-md);
+    color: var(--green);
+}
+
+main {
+    padding-bottom: 24px;
+    flex-grow: 1;
+}

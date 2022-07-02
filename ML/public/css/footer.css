@@ -1,0 +1,50 @@
+.footer {
+    background-color: var(--white);
+}
+
+.footer section {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.footer section div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.footer section i {
+    display: inline-block;
+    color: var(--light-blue);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer section p {
+    text-align: center;
+}
+
+.footer .copy p {
+    font-size: var(--font-sm);
+}
+
+/* desktop */
+@media (min-width: 769px) {
+    .footer {
+        padding-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__section {
+        width: 30%;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer__section div {
+        width: 100% !important;
+    }
+}

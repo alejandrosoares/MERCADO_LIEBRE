@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <!-- icons -->
+    <link rel="stylesheet"  href="font/bootstrap-icons.css">
+    <title>Crear cuenta | Mercado Liebre</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top-bar">
+            <div class="top-bar__img">
+                <a href="/">
+                    <img src="/img/logo-mercado-liebre.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="top-bar__search">
+                <input type="text" placeholder="Buscá lo que queres">
+                <button>
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <div class="top-bar__subtitle">
+                <p>
+                    <i class="bi bi-currency-dollar"></i>
+                    Comprá en cuoutas y sin tarjeta de crédito
+                </p>
+            </div>
+        </div>
+        <div class="header__bottom-bar">
+            <nav class="header__site">
+                <ul>
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav class="header__login">
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="bi bi-person-circle"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="bi bi-box-arrow-in-right"></i></a></li>
+                    <li><a href="">Mis compras <i class="bi bi-bag-fill"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="collapse-button">
+            <button>
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <form action="/register" method="POST" class="form" enctype="multipart/formdata">
+            <div class="form__title">
+                <h1>Creá tu cuenta</h1>
+            </div>
+            <div>
+                <input type="text" name="surname" id="surname" placeholder="Apellido" minlength="3" required>
+            </div>
+            <div>
+                <input type="text" name="name" id="name" placeholder="Nombre" minlength="3" required>
+            </div>
+            <div>
+                <input type="text" name="username" id="username" placeholder="Usuario" minlength="5" required>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="E-mail" minlength="5" required>
+            </div>
+            <div class="form__field date">
+                <label for="birthDate">Fecha de nacimiento</label>
+                <input type="date" name="birthDate" id="birthDate" required>
+            </div>
+            <div>
+                <input type="text" name="address" id="address" placeholder="Domicilio" required>
+            </div>
+            <div class="form__field profile">
+                <p>Perfil de usuario</p>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="buyer" name="perfil" value="buyer" required>
+                        <label for="buyer">Comprador</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="seller" name="perfil" value="seller" required>
+                        <label for="seller">Venderdor</label><br>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="form__field interests">
+                <p>Intereses</p>
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="int01" name="interests" value="01">
+                        <label for="int01">Electro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="int02" name="interests" value="02">
+                        <label for="int02">Moda</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="int03" name="interests" value="03">
+                        <label for="int03">Hogar</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="int04" name="interests" value="04">
+                        <label for="int04">Juguetería</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="vendedor" name="interests" value="05">
+                        <label for="vendedor">Vida sana</label><br>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <label for="avatar">Avatar</label>
+                <input type="file" name="avatar" id="avatar">
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Contraseña" minlength="6" required>
+            </div>
+            <div>
+                <input type="password" name="password1" id="password1" placeholder="Confirmar contraseña" minlength="6" required>
+            </div>
+            <div class="form__btn-submit">
+                <button type="submit">Crear mi cuenta</button>
+            </div>
+            <div class="form__field clear-data">
+                <button type="reset">Limpiar mis datos</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <div>
+                <i class="bi bi-credit-card"></i>
+            </div>
+            <div>
+                <p>Pagá con tarjetas o en efectivo</p>
+            </div>
+            <div>
+                <p>Con MercadoLiebreCash tenés cuotas sin interés con  tarjetas o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div> 
+        </section>
+        <section class="footer__section">
+            <div>
+                <i class="bi bi-box2-heart"></i>
+            </div>
+            <div>
+                <p>Envío gratis desde los $ 2.500</p>
+            </div>
+            <div>
+                <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
+            </div>
+        </section>
+        <section class="footer__section">
+            <div>
+                <i class="bi bi-shield-check"></i>
+            </div>
+            <div>
+                <p>Seguridad de principio a fin</p>
+            </div>
+            <div>
+                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer por que siempre estás protegid@.</p>
+            </div>
+        </section>
+        <section class="copy">
+            <p>Copyright 1999-2020 &copy; MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
+</body>
+</html>
