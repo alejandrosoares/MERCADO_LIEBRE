@@ -2,13 +2,13 @@ const express = require('express')
 const path = require('path')
 const {templatePath} = require('./helpers/templatePath')
 const bodyParser = require('body-parser')
-const publicPath = path.resolve(__dirname, 'public')
+const publicPath = path.resolve(__dirname, '../public')
 const app = express()
 
 // MIDDLEWARE
 app.use(express.static(publicPath))
 app.use(bodyParser.urlencoded({ extended: true }))
-app.set('PORT', process.env.PORT || 3000)
+app.set('PORT', process.env.PORT || 8000)
 
 app.listen(app.get('PORT'), () => {
     console.log('Servidor corriendo en puerto ' + app.get('PORT'))
