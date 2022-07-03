@@ -14,9 +14,15 @@ class Model {
         return path.join(__dirname, '../data', fileName)
     }
 
+    /**
+     * Load valid fields in object
+     * @param {Object} obj 
+     * @param {Object} fields 
+     * @param {Array} validFields 
+     * @returns 
+     */
     static loadFieldsInObj = (obj, fields, validFields) => {
-        /* Carga unicamente los campos validos */
-
+        
         for (let key of getKeys(fields)) {
             if (validFields.includes(key)) {
                 obj[key] = fields[key]
