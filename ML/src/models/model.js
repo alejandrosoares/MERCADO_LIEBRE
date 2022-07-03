@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs')
-const getKeys = require('../../helpers/getKeys')
+const getKeys = require('../helpers/getKeys')
 
 class Model {
 
@@ -11,7 +11,7 @@ class Model {
     }
 
     static _getFilePath = (fileName) => {
-        return path.join(__dirname, '../database', fileName)
+        return path.join(__dirname, '../data', fileName)
     }
 
     static loadFieldsInObj = (obj, fields, validFields) => {

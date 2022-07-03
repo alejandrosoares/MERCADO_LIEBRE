@@ -2,7 +2,6 @@ const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
 const routers = require('./routers/index')
-const { templatePath } = require('./helpers/templatePath')
 const publicPath = path.resolve(__dirname, '../public')
 const app = express()
 

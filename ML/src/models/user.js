@@ -7,7 +7,7 @@ const {
     } = require('./messages/user')
 
 const NOT_IMG = 'default-avatar.jpg'
-const USER_DB = 'user.json'
+const USER_DB = 'userDB.json'
 
 
 class UserModel extends Model {
