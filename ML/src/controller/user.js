@@ -31,7 +31,7 @@ const userController = {
         const response = userModel.login(body.email, body.password)
 
         if (!response.error) {
-            res.redirect('/home')
+            res.redirect('/')
         } else {
             const locals = {
                 error: response.error,

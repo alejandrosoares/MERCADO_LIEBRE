@@ -15,7 +15,8 @@ class UserModel extends Model {
 
     validFields = [
         'name', 'surname', 'email',
-        'password', 'role', 'avatar'
+        'password', 'role', 'avatar',
+        'interests'
     ]
 
     constructor(dbFile) {
@@ -62,12 +63,12 @@ class UserModel extends Model {
         return false
     }
 
-    /** Asign role 2 (user) and clear field id
+    /** Clear field id and parse to in interests field
      * @param {Object} user object
      */
     _normalizeFields = fields => {
-        fields.role = 2
         delete fields.id
+        fields.interests = fields.interests.map(interest => parseInt(interest))
     }
 
     /**

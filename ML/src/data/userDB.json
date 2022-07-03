@@ -1,20 +1,43 @@
 [
-    {
-        "id": 1,
-        "name": "Alejandro",
-        "surname": "Soares",
-        "email": "ale.soares@gmail.com",
-        "password": "ale123",
-        "role": "user",
-        "avatar": ""
-    },
-    {
-        "id": 2,
-        "name": "Juana",
-        "surname": "lopez",
-        "email": "juana.lopez@gmail.com",
-        "password": "ale123",
-        "role": "user",
-        "avatar": ""
-    }
+  {
+    "id": 1,
+    "name": "Alejandro",
+    "surname": "Soares",
+    "email": "ale.soares@gmail.com",
+    "password": "ale123",
+    "role": "user",
+    "avatar": ""
+  },
+  {
+    "id": 2,
+    "name": "Juana",
+    "surname": "lopez",
+    "email": "juana.lopez@gmail.com",
+    "password": "ale123",
+    "role": "user",
+    "avatar": ""
+  },
+  {
+    "id": 3,
+    "name": "Rocio",
+    "surname": "Iurinic",
+    "email": "rocio@gmail.com",
+    "password": "rocio123",
+    "avatar": "1656820931294.jpg",
+    "role": 2
+  },
+  {
+    "id": 7,
+    "name": "Alito",
+    "surname": "Soares",
+    "email": "johndoe8@gmail.com",
+    "role": "1",
+    "interests": [
+      1,
+      2,
+      3
+    ],
+    "password": "doe123",
+    "avatar": "default-avatar.jpg"
+  }
 ]
