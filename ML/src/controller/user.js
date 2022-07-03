@@ -1,6 +1,7 @@
 const userModel = require('../models/user')
 const getViewPath = view => `user/${view}`
 
+
 const userController = {
 
     getRegister: (req, res) => {
@@ -28,7 +29,7 @@ const userController = {
     postLogin: (req, res) => {
         const body = req.body
         const response = userModel.login(body.email, body.password)
-        
+
         if (!response.error) {
             res.redirect('/home')
         } else {
